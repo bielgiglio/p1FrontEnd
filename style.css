@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #27557a;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+
+h1 {
+    text-align: center;
+    color: #0033a0;
+    font-size: 2em;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+  }
+
+#pesquisa {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 80%;
+    max-width: 600px;
+    border: 1px solid #0033a0;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+#item-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+.item {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+
+.item:hover {
+    transform: scale(1.05);
+  }
+
+.item h3 {
+    color: #0033a0;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    
+  }
+
+.item button {
+    background-color: #ffc72c;
+    color: #0033a0;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+.item button:hover {
+    background-color: #ffbb00;
+  }
+
+#container-favoritos {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+#container-favoritos h2 {
+    color: #0033a0;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+#lista-favoritos {
+    list-style: none;
+    padding: 0;
+  }
+
+#lista-favoritos div {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.1em;
+    color: #333;
+  }
+
+#lista-favoritos button {
+    background-color: #0033a0;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+  }
+
+#lista-favoritos button:hover {
+    background-color: #002080;
+  }
+
+
+@media (max-width: 600px) {
+    #item-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .item {
+      width: 90%;
+    }
+  }
